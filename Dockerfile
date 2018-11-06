@@ -6,7 +6,6 @@ ENV EBOT_HOME="/ebot" \
 RUN apt-get update -y && curl -sL https://deb.nodesource.com/setup_8.x | bash && \
     apt-get install -y netcat git nodejs php5-curl && apt-get clean && \
     mkdir ${EBOT_HOME} && \
-    ln -s /usr/bin/nodejs /usr/bin/node && \
     npm install socket.io archiver formidable && \
     npm install -g forever && \
     pecl install pthreads-2.0.10 && \
