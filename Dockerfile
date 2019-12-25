@@ -1,7 +1,7 @@
 FROM php:5.6.25-zts
 
 ENV EBOT_HOME="/ebot" \
-    TIMEZONE="Europe/Istanbul"
+    TIMEZONE="Europe/Bratislava"
 
 RUN apt-get update -y && curl -sL https://deb.nodesource.com/setup_8.x | bash && \
     apt-get install -y netcat git nodejs php5-curl && apt-get clean && \
